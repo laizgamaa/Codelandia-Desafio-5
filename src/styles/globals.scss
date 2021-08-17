@@ -1,10 +1,8 @@
 :root {
-  --green: #04c35c;
-  --blue: #2b6cb0;
+  --blue: #0072D2;
+  --yellow: #FFA800;
   --white: #ffffff;
-  --white300: #f7fafc;
-  --dark: #1a202c;
-  --input: #e8e8e8;
+  --dark: #131318;
 }
 
 * {
@@ -19,7 +17,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'B612', sans-serif;
+  color: var(--white);
 }
 
 h1,
@@ -40,6 +39,14 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  padding: 1.3rem 2rem;
+  border-radius: 3px;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 img {

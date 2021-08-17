@@ -1,0 +1,105 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.contentContainer {
+    padding: 0 10rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    @media screen and (max-width: 414px) {
+        padding: 2rem 6rem;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 8rem;
+        p, h1 {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 6rem;
+        }
+    }
+    .infoContainer {
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+        gap: 6rem;
+        @media screen and (max-width: 414px) {
+            display: flex;
+            flex-direction: column;
+        }
+        .cover {
+            picture {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            .synopsis {
+                p {
+                    line-height: 2;
+                }
+            }
+            .techInfo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (max-width: 414px) {
+                    flex-direction: column;
+                }
+                .duration {
+                    display: flex;
+                    gap: 1rem;
+                }
+                .starsRating {
+                    input {
+                        border: 0;
+                        width: 1px;
+                        height: 1px;
+                        overflow: hidden;
+                        position: absolute !important;
+                        clip: rect(1px 1px 1px 1px);
+                        clip: rect(1px, 1px, 1px, 1px);
+                        opacity: 0;
+                    }
+                    label {
+                        position: relative;
+                        float: right;
+                        color: #C8C8C8;
+                    }            
+                    label:before {
+                        margin: 5px;
+                        content: "\f005";
+                        font-family: FontAwesome;
+                        display: inline-block;
+                        font-size: 1.5em;
+                        color: #FFC107;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        user-select: none;
+                    }
+                }
+            }
+            .actionButtons {
+                display: flex;
+                gap: 2rem;
+                .watchNowButton, .trailerButton {
+                    color: var(--white);
+                    text-transform: uppercase;
+                }
+                .watchNowButton {
+                    background: var(--blue);
+                }
+                .trailerButton {
+                    background: var(--dark);
+                    border: 1px solid var(--white);
+                }
+            }
+        }
+    }
+}
