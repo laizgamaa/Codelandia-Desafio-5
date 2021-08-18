@@ -1,6 +1,8 @@
 import styles from '../styles/components/Content.module.scss'
 import { BsClock } from 'react-icons/bs';
 
+import Image from "next/image"
+
 export function Content() {
     return(
         <div className={styles.contentContainer}>
@@ -12,7 +14,7 @@ export function Content() {
             <section className={styles.infoContainer}>
                 <div className={styles.cover}>
                     <picture>
-                        <img src="capa.png" alt="Loki" />
+                        <Image src="capa.png" alt="Loki" />
                     </picture>
                 </div>
                 <div className={styles.info}>
