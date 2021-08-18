@@ -25,16 +25,10 @@
         display: grid;
         grid-template-columns: 20rem 1fr;
         gap: 6rem;
+        align-items: center;
         @media screen and (max-width: 414px) {
             display: flex;
             flex-direction: column;
-        }
-        .cover {
-            picture {
-                img {
-                    width: 300px;
-                }
-            }
         }
         .info {
             display: flex;

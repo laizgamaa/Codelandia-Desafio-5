@@ -13,7 +13,12 @@ export function Content() {
             <section className={styles.infoContainer}>
                 <div className={styles.cover}>
                     <picture>
-                        <Image src="capa.png" alt="Loki" />
+                        <Image
+                            src="/capa.png"
+                            alt="Loki"
+                            width={300}
+                            height={400}
+                        />
                     </picture>
                 </div>
                 <div className={styles.info}>
